@@ -1,0 +1,28 @@
+<h2>LISTA DE CLIENTES</h2>
+<div class="container">
+    <table class="table table-dark">
+        <thead class="table-dark">
+            <tr>
+                <th>INDICE</th>
+                <th>TIPO DOC.</th>
+                <th>NRO. DOC.</th>
+                <th>NOMBRE / RAZON DEL CLIENTE</th>
+                <th>DIRECCION</th>
+                <th>CELULAR</th>
+                <th>EMAIL</th>
+            </tr>
+        </thead>
+        <Tbody>
+            <tr *ngFor="let cliente of clientes">
+                <td>{{cliente.indice}}</td>
+                <td>{{cliente.tipodoc}}</td>
+                <td>{{cliente.dnioruc}}</td>
+                <td>{{cliente.razon}}</td>
+                <td>{{cliente.direccion}}</td>
+                <td>{{cliente.celular}}</td>
+                <td>{{cliente.email}}</td>
+            </tr>
+        </Tbody>
+    </table>
+
+</div>
